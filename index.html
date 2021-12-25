@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="text-base overflow-x-hidden">
+    <header>
+      <div class="py-8 px-4 md:px-12 md:py-12 lg:px-16 lg:py-16">
+        <div class="flex justify-between gap-8 items-center">
+          <div class="brand"><img src="logo.svg" alt="brand-logo" /></div>
+          <nav class="hidden lg:flex flex-grow justify-between items-center">
+            <ul
+              class="flex gap-4 text-slate-500 font-medium text-lg capitalize"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="
+                    hover:text-violet-500
+                    focus:text-violet-600 focus:outline-none
+                  "
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="
+                    hover:text-violet-500
+                    focus:text-violet-600 focus:outline-none
+                  "
+                  >products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="
+                    hover:text-violet-500
+                    focus:text-violet-600 focus:outline-none
+                  "
+                  >resources</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="
+                    hover:text-violet-500
+                    focus:text-violet-600 focus:outline-none
+                  "
+                  >pricing</a
+                >
+              </li>
+            </ul>
+            <div class="flex items-center gap-x-4">
+              <button
+                class="
+                  ring-2 ring-slate-300
+                  px-4
+                  py-3
+                  rounded-lg
+                  font-medium
+                  capitalize
+                  hover:scale-105
+                  focus:outline-2
+                  focus:outline-offset-4
+                  focus:outline
+                  focus:outline-violet-500
+                  transition-all
+                "
+              >
+                log in</button
+              ><button
+                class="
+                  bg-violet-600
+                  text-white
+                  px-4
+                  py-3
+                  rounded-lg
+                  font-medium
+                  capitalize
+                  hover:scale-105
+                  focus:outline-2
+                  focus:outline-offset-4
+                  focus:outline
+                  focus:outline-violet-500
+                  transition-all
+                "
+              >
+                sign up
+              </button>
+            </div>
+          </nav>
+          <nav class="lg:hidden">
+            <button class="grid grid-cols-1 place-content-center text-3xl">
+              <i class="fas fa-bars"></i>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="py-8 px-4 md:px-12 md:py-12 lg:px-16 lg:py-16">
+        <div
+          class="
+            flex
+            wrap
+            flex-col
+            items-center
+            justify-between
+            lg:gap-24
+            gap-16
+            max-w-8xl
+            mx-auto
+            md:flex-row
+          "
+        >
+          <div class="section_text">
+            <div class="text-center md:text-left max-w-xl">
+              <h1 class="text-4xl text-gray-900 font-bold mb-4">
+                Be the first to know when we launch
+              </h1>
+              <p class="section_subtitle mb-4">
+                We’re still building. Subscribe for updates and 20% off when we
+                launch. No spam, we promise!
+              </p>
+            </div>
+            <form class="accent-violet-600">
+              <div
+                class="
+                  flex flex-col
+                  gap-2
+                  sm:flex-row
+                  align-center
+                  justify-center
+                  mb-2
+                "
+              >
+                <input
+                  type="text"
+                  placeholder="enter your email"
+                  class="
+                    appearance-none
+                    rounded-lg
+                    border-2 border-slate-300
+                    px-4
+                    py-3
+                    grow
+                    hover:ring-4 hover:ring-violet-300
+                    focus:outline-violet-400
+                    focus:outline
+                    focus:outline-2
+                    focus:ring-4
+                    focus:ring-violet-300
+                    transition-all
+                  "
+                />
+                <button
+                  class="
+                    bg-violet-600
+                    text-white
+                    px-4
+                    py-3
+                    rounded-lg
+                    font-medium
+                    capitalize
+                    hover:scale-105
+                    focus:outline-2
+                    focus:outline-offset-4
+                    focus:outline
+                    focus:outline-violet-500
+                    transition-all
+                  "
+                  type="submit"
+                >
+                  subscribe
+                </button>
+              </div>
+              <label class="flex items-center">
+                <input
+                  type="checkbox"
+                  name="privacy-checkbox"
+                  id="privacy-checkbox"
+                  class="mr-2"
+                />
+                we care about your privacy. check to allow data collection
+              </label>
+            </form>
+          </div>
+          <div
+            class="
+              flex
+              relative
+              items-center
+              justify-center
+              before:h-2/3 before:w-[80vw]
+              md:before:w-[50vw]
+              before:bg-slate-50
+              before:absolute
+              before:top-1/2
+              before:-translate-y-1/2
+              before:-z-10
+              before:rounded-[74%_26%_71%_29%_/_42%_34%_66%_58%]
+            "
+          >
+            <img
+              src="./iphonemockup.png"
+              alt="iphone-mockup"
+              class="max-w-full drop-shadow-xl mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <section>
+      <div class="py-8 px-4 md:px-12 md:py-12 lg:px-16 lg:py-16">
+        <div class="mx-auto max-w-8xl">
+          <h2 class="text-base text-gray-400 text-center mb-8">
+            Join 4,000+ companies already growing
+          </h2>
+          <div class="flex flex-wrap items-center justify-center gap-8">
+            <img
+              src="Company logo.svg"
+              alt="Company logo"
+              class="w-32 md:w-48"
+            />
+            <img
+              src="Company logo-1.svg"
+              alt="Company logo"
+              class="w-32 md:w-48"
+            />
+            <img
+              src="Company logo-2.svg"
+              alt="Company logo"
+              class="w-32 md:w-48"
+            />
+            <img
+              src="Company logo-3.svg"
+              alt="Company logo"
+              class="w-32 md:w-48"
+            />
+            <img
+              src="Company logo-4.svg"
+              alt="Company logo"
+              class="w-32 md:w-48"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="py-8 px-4 md:px-12 md:py-12 lg:px-16 lg:py-16">
+        <div class="mx-auto max-w-8xl">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl text-gray-900 font-medium mb-2">
+              Great products, faster than ever
+            </h2>
+            <p class="text-base text-slate-500">
+              Everything you need to build modern UI and great products.
+            </p>
+          </div>
+          <div
+            class="bg-slate-50 flex flex-wrap justify-center gap-16 rounded-lg"
+          >
+            <div class="flex flex-col items-center gap-2 p-6 md:p-12 lg:p-16">
+              <span class="font-medium text-5xl text-violet-600">400+</span
+              ><span class="text-lg text-gray-900">Projects completed</span>
+            </div>
+            <div class="flex flex-col items-center gap-2 p-6 md:p-12 lg:p-16">
+              <span class="font-medium text-5xl text-violet-600">600%</span
+              ><span class="text-lg text-gray-900">Return on investment</span>
+            </div>
+            <div class="flex flex-col items-center gap-2 p-6 md:p-12 lg:p-16">
+              <span class="font-medium text-5xl text-violet-600">10k</span
+              ><span class="text-lg text-gray-900">Global downloads</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="py-8 px-4 md:px-12 md:py-12 lg:px-16 lg:py-16">
+        <div class="mx-auto max-w-8xl">
+          <div class="text-center flex flex-col gap-2 mb-16">
+            <h2 class="text-lg text-violet-600 font-bold capitalize">
+              features
+            </h2>
+            <span class="text-3xl font-medium text-gray-900"
+              >Beautiful analytics to grow smarter</span
+            >
+            <span class="text-base text-slate-500"
+              >Powerful, self-serve product and growth analytics to help you
+              convert, engage, and retain more users. Trusted by over 4,000
+              startups.</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-24">
+            <div
+              class="
+                flex flex-col
+                items-center
+                justify-center
+                gap-8
+                lg:gap-24 lg:flex-row
+              "
+            >
+              <div
+                class="
+                  text-slate-500
+                  flex flex-col
+                  items-center
+                  text-center
+                  lg:items-start lg:text-left
+                  grow
+                  w-full
+                "
+              >
+                <span
+                  class="
+                    inline-block
+                    mb-4
+                    relative
+                    before:absolute
+                    before:top-1/2
+                    before:left-1/2
+                    before:-translate-x-1/2
+                    before:-translate-y-1/2
+                    before:-z-10
+                    before:aspect-square
+                    before:block
+                    before:w-[calc(100%+1rem)]
+                    before:bg-violet-200
+                    before:rounded-full
+                    after:absolute
+                    after:top-1/2
+                    after:left-1/2
+                    after:-translate-x-1/2
+                    after:-translate-y-1/2
+                    after:-z-20
+                    after:aspect-square
+                    before:block
+                    after:w-[calc(100%+1.4rem)]
+                    after:bg-violet-100
+                    after:rounded-full
+                  "
+                  ><i class="fas fa-envelope text-gray-900"></i
+                ></span>
+                <h3 class="text-2xl text-gray-900 font-medium mb-2">
+                  Share team inboxes
+                </h3>
+                <p class="max-w-lg">
+                  Whether you have a team of 2 or 200, our shared team inboxes
+                  keep everyone on the same page and in the loop.
+                </p>
+                <ul class="mt-4 flex flex-col items-start gap-2 text-left">
+                  <li class="flex items-start justify-start gap-2">
+                    <span
+                      class="
+                        inline-block
+                        relative
+                        before:absolute
+                        before:top-1/2
+                        before:left-1/2
+                        before:-translate-x-1/2
+                        before:-translate-y-1/2
+                        before:-z-10
+                        before:aspect-square
+                        before:block
+                        before:w-[calc(100%+0.3rem)]
+                        before:bg-violet-200
+                        before:rounded-full
+                      "
+                    >
+                      <i class="fas fa-check text-gray-900"></i>
+                    </span>
+                    <span>Leverage automation to move fast</span>
+                  </li>
+                  <li class="flex items-start justify-start gap-2">
+                    <span
+                      class="
+                        inline-block
+                        relative
+                        before:absolute
+                        before:top-1/2
+                        before:left-1/2
+                        before:-translate-x-1/2
+                        before:-translate-y-1/2
+                        before:-z-10
+                        before:aspect-square
+                        before:block
+                        before:w-[calc(100%+0.3rem)]
+                        before:bg-violet-200
+                        before:rounded-full
+                      "
+                    >
+                      <i class="fas fa-check text-gray-900"></i>
+                    </span>
+                    <span> Always give customers a human to chat to</span>
+                  </li>
+                  <li class="flex items-start justify-start gap-2">
+                    <span
+                      class="
+                        inline-block
+                        relative
+                        before:absolute
+                        before:top-1/2
+                        before:left-1/2
+                        before:-translate-x-1/2
+                        before:-translate-y-1/2
+                        before:-z-10
+                        before:aspect-square
+                        before:block
+                        before:w-[calc(100%+0.3rem)]
+                        before:bg-violet-200
+                        before:rounded-full
+                      "
+                    >
+                      <i class="fas fa-check text-gray-900"></i>
+                    </span>
+                    <span
+                      >Automate customer support and close leads faster</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="shadow-lg grow w-full">
+                <img src="featuremockup.png" alt="feature mockup" />
+              </div>
+            </div>
+            <div
+              class="
+                flex flex-col
+                items-center
+                justify-center
+                gap-8
+                lg:gap-24 lg:flex-row-reverse
+              "
+            >
+              <div
+                class="
+                  text-slate-500
+                  flex flex-col
+                  items-center
+                  text-center
+                  lg:items-start lg:text-left
+                  grow
+                  w-full
+                "
+              >
+                <span
+                  class="
+                    inline-block
+                    mb-4
+                    relative
+                    before:absolute
+                    before:top-1/2
+                    before:left-1/2
+                    before:-translate-x-1/2
+                    before:-translate-y-1/2
+                    before:-z-10
+                    before:aspect-square
+                    before:block
+                    before:w-[calc(100%+1rem)]
+                    before:bg-violet-200
+                    before:rounded-full
+                    after:absolute
+                    after:top-1/2
+                    after:left-1/2
+                    after:-translate-x-1/2
+                    after:-translate-y-1/2
+                    after:-z-20
+                    after:aspect-square
+                    before:block
+                    after:w-[calc(100%+1.4rem)]
+                    after:bg-violet-100
+                    after:rounded-full
+                  "
+                  ><i class="fas fa-envelope text-gray-900"></i
+                ></span>
+                <h3 class="text-2xl text-gray-900 font-medium mb-2">
+                  Share team inboxes
+                </h3>
+                <p class="max-w-lg">
+                  Whether you have a team of 2 or 200, our shared team inboxes
+                  keep everyone on the same page and in the loop.
+                </p>
+                <ul class="mt-4 flex flex-col items-start gap-2 text-left">
+                  <li class="flex items-start justify-start gap-2">
+                    <span
+                      class="
+                        inline-block
+                        relative
+                        before:absolute
+                        before:top-1/2
+                        before:left-1/2
+                        before:-translate-x-1/2
+                        before:-translate-y-1/2
+                        before:-z-10
+                        before:aspect-square
+                        before:block
+                        before:w-[calc(100%+0.3rem)]
+                        before:bg-violet-200
+                        before:rounded-full
+                      "
+                    >
+                      <i class="fas fa-check text-gray-900"></i>
+                    </span>
+                    <span>Leverage automation to move fast</span>
+                  </li>
+                  <li class="flex items-start justify-start gap-2">
+                    <span
+                      class="
+                        inline-block
+                        relative
+                        before:absolute
+                        before:top-1/2
+                        before:left-1/2
+                        before:-translate-x-1/2
+                        before:-translate-y-1/2
+                        before:-z-10
+                        before:aspect-square
+                        before:block
+                        before:w-[calc(100%+0.3rem)]
+                        before:bg-violet-200
+                        before:rounded-full
+                      "
+                    >
+                      <i class="fas fa-check text-gray-900"></i>
+                    </span>
+                    <span> Always give customers a human to chat to</span>
+                  </li>
+                  <li class="flex items-start justify-start gap-2">
+                    <span
+                      class="
+                        inline-block
+                        relative
+                        before:absolute
+                        before:top-1/2
+                        before:left-1/2
+                        before:-translate-x-1/2
+                        before:-translate-y-1/2
+                        before:-z-10
+                        before:aspect-square
+                        before:block
+                        before:w-[calc(100%+0.3rem)]
+                        before:bg-violet-200
+                        before:rounded-full
+                      "
+                    >
+                      <i class="fas fa-check text-gray-900"></i>
+                    </span>
+                    <span
+                      >Automate customer support and close leads faster</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="shadow-lg grow w-full">
+                <img src="featuremockup.png" alt="feature mockup" />
+              </div>
+            </div>
+            <div
+              class="
+                flex flex-col
+                items-center
+                justify-center
+                gap-8
+                lg:gap-24 lg:flex-row
+              "
+            >
+              <div
+                class="
+                  text-slate-500
+                  flex flex-col
+                  items-center
+                  text-center
+                  lg:items-start lg:text-left
+                  grow
+                  w-full
+                "
+              >
+                <span
+                  class="
+                    inline-block
+                    mb-4
+                    relative
+                    before:absolute
+                    before:top-1/2
+                    before:left-1/2
+                    before:-translate-x-1/2
+                    before:-translate-y-1/2
+                    before:-z-10
+                    before:aspect-square
+                    before:block
+                    before:w-[calc(100%+1rem)]
+                    before:bg-violet-200
+                    before:rounded-full
+                    after:absolute
+                    after:top-1/2
+                    after:left-1/2
+                    after:-translate-x-1/2
+                    after:-translate-y-1/2
+                    after:-z-20
+                    after:aspect-square
+                    before:block
+                    after:w-[calc(100%+1.4rem)]
+                    after:bg-violet-100
+                    after:rounded-full
+                  "
+                  ><i class="fas fa-envelope text-gray-900"></i
+                ></span>
+                <h3 class="text-2xl text-gray-900 font-medium mb-2">
+                  Share team inboxes
+                </h3>
+                <p class="max-w-lg">
+                  Whether you have a team of 2 or 200, our shared team inboxes
+                  keep everyone on the same page and in the loop.
+                </p>
+                <ul class="mt-4 flex flex-col items-start gap-2 text-left">
+                  <li class="flex items-start justify-start gap-2">
+                    <span
+                      class="
+                        inline-block
+                        relative
+                        before:absolute
+                        before:top-1/2
+                        before:left-1/2
+                        before:-translate-x-1/2
+                        before:-translate-y-1/2
+                        before:-z-10
+                        before:aspect-square
+                        before:block
+                        before:w-[calc(100%+0.3rem)]
+                        before:bg-violet-200
+                        before:rounded-full
+                      "
+                    >
+                      <i class="fas fa-check text-gray-900"></i>
+                    </span>
+                    <span>Leverage automation to move fast</span>
+                  </li>
+                  <li class="flex items-start justify-start gap-2">
+                    <span
+                      class="
+                        inline-block
+                        relative
+                        before:absolute
+                        before:top-1/2
+                        before:left-1/2
+                        before:-translate-x-1/2
+                        before:-translate-y-1/2
+                        before:-z-10
+                        before:aspect-square
+                        before:block
+                        before:w-[calc(100%+0.3rem)]
+                        before:bg-violet-200
+                        before:rounded-full
+                      "
+                    >
+                      <i class="fas fa-check text-gray-900"></i>
+                    </span>
+                    <span> Always give customers a human to chat to</span>
+                  </li>
+                  <li class="flex items-start justify-start gap-2">
+                    <span
+                      class="
+                        inline-block
+                        relative
+                        before:absolute
+                        before:top-1/2
+                        before:left-1/2
+                        before:-translate-x-1/2
+                        before:-translate-y-1/2
+                        before:-z-10
+                        before:aspect-square
+                        before:block
+                        before:w-[calc(100%+0.3rem)]
+                        before:bg-violet-200
+                        before:rounded-full
+                      "
+                    >
+                      <i class="fas fa-check text-gray-900"></i>
+                    </span>
+                    <span
+                      >Automate customer support and close leads faster</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="shadow-lg grow w-full">
+                <img src="featuremockup.png" alt="feature mockup" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="py-8 px-4 md:px-12 md:py-12 lg:px-16 lg:py-16">
+        <div class="max-w-8xl mx-auto">
+          <div class="text-center flex flex-col gap-2 mb-16">
+            <h2 class="text-lg text-violet-600 font-bold capitalize">
+              pricing
+            </h2>
+            <span class="text-3xl font-medium text-gray-900"
+              >Simple, transparent pricing</span
+            >
+            <span class="text-base text-slate-500"
+              >We believe Untitled should be accessible to all companies, no
+              matter the size.</span
+            >
+          </div>
+
+          <div class="flex justify-center items-center gap-8 flex-wrap">
+            <div class="shadow-lg rounded-md pt-8">
+              <div class="flex flex-col gap-2 items-center">
+                <span
+                  class="
+                    inline-block
+                    mb-4
+                    relative
+                    before:absolute
+                    before:top-1/2
+                    before:left-1/2
+                    before:-translate-x-1/2
+                    before:-translate-y-1/2
+                    before:-z-10
+                    before:aspect-square
+                    before:block
+                    before:w-[calc(100%+1rem)]
+                    before:bg-violet-200
+                    before:rounded-full
+                    after:absolute
+                    after:top-1/2
+                    after:left-1/2
+                    after:-translate-x-1/2
+                    after:-translate-y-1/2
+                    after:-z-20
+                    after:aspect-square
+                    before:block
+                    after:w-[calc(100%+1.4rem)]
+                    after:bg-violet-100
+                    after:rounded-full
+                  "
+                  ><i class="fas fa-money-bill-wave"></i
+                ></span>
+                <span class="text-violet-600 font-medium text-lg capitalize"
+                  >basic plan</span
+                >
+                <span class="text-gray-900 font-medium text-4xl">$10/mth</span>
+                <span class="text-slate-500">Billed annually.</span>
+              </div>
+              <ul
+                class="
+                  mt-4
+                  flex flex-col
+                  items-start
+                  gap-2
+                  text-left
+                  px-16
+                  py-8
+                "
+              >
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>Access to all basic features</span>
+                </li>
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>Basic reporting and analytics</span>
+                </li>
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>Up to 10 individual users</span>
+                </li>
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>20GB individual data each user</span>
+                </li>
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>Basic chat and email support</span>
+                </li>
+              </ul>
+              <div class="p-8 bg-slate-100">
+                <button
+                  class="
+                    bg-violet-600
+                    text-white
+                    px-4
+                    py-3
+                    rounded-lg
+                    font-medium
+                    w-full
+                    capitalize
+                    hover:scale-105
+                    focus:outline-2
+                    focus:outline-offset-4
+                    focus:outline
+                    focus:outline-violet-500
+                    transition-all
+                  "
+                >
+                  get started
+                </button>
+              </div>
+            </div>
+            <div class="shadow-lg rounded-md pt-8">
+              <div class="flex flex-col gap-2 items-center">
+                <span
+                  class="
+                    inline-block
+                    mb-4
+                    relative
+                    before:absolute
+                    before:top-1/2
+                    before:left-1/2
+                    before:-translate-x-1/2
+                    before:-translate-y-1/2
+                    before:-z-10
+                    before:aspect-square
+                    before:block
+                    before:w-[calc(100%+1rem)]
+                    before:bg-violet-200
+                    before:rounded-full
+                    after:absolute
+                    after:top-1/2
+                    after:left-1/2
+                    after:-translate-x-1/2
+                    after:-translate-y-1/2
+                    after:-z-20
+                    after:aspect-square
+                    before:block
+                    after:w-[calc(100%+1.4rem)]
+                    after:bg-violet-100
+                    after:rounded-full
+                  "
+                  ><i class="fas fa-money-bill-wave"></i
+                ></span>
+                <span class="text-violet-600 font-medium text-lg capitalize"
+                  >basic plan</span
+                >
+                <span class="text-gray-900 font-medium text-4xl">$10/mth</span>
+                <span class="text-slate-500">Billed annually.</span>
+              </div>
+              <ul
+                class="
+                  mt-4
+                  flex flex-col
+                  items-start
+                  gap-2
+                  text-left
+                  px-16
+                  py-8
+                "
+              >
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>Access to all basic features</span>
+                </li>
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>Basic reporting and analytics</span>
+                </li>
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>Up to 10 individual users</span>
+                </li>
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>20GB individual data each user</span>
+                </li>
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>Basic chat and email support</span>
+                </li>
+              </ul>
+              <div class="p-8 bg-slate-100">
+                <button
+                  class="
+                    bg-violet-600
+                    text-white
+                    px-4
+                    py-3
+                    rounded-lg
+                    font-medium
+                    w-full
+                    capitalize
+                    hover:scale-105
+                    focus:outline-2
+                    focus:outline-offset-4
+                    focus:outline
+                    focus:outline-violet-500
+                    transition-all
+                  "
+                >
+                  get started
+                </button>
+              </div>
+            </div>
+            <div class="shadow-lg rounded-md pt-8">
+              <div class="flex flex-col gap-2 items-center">
+                <span
+                  class="
+                    inline-block
+                    mb-4
+                    relative
+                    before:absolute
+                    before:top-1/2
+                    before:left-1/2
+                    before:-translate-x-1/2
+                    before:-translate-y-1/2
+                    before:-z-10
+                    before:aspect-square
+                    before:block
+                    before:w-[calc(100%+1rem)]
+                    before:bg-violet-200
+                    before:rounded-full
+                    after:absolute
+                    after:top-1/2
+                    after:left-1/2
+                    after:-translate-x-1/2
+                    after:-translate-y-1/2
+                    after:-z-20
+                    after:aspect-square
+                    before:block
+                    after:w-[calc(100%+1.4rem)]
+                    after:bg-violet-100
+                    after:rounded-full
+                  "
+                  ><i class="fas fa-money-bill-wave"></i
+                ></span>
+                <span class="text-violet-600 font-medium text-lg capitalize"
+                  >basic plan</span
+                >
+                <span class="text-gray-900 font-medium text-4xl">$10/mth</span>
+                <span class="text-slate-500">Billed annually.</span>
+              </div>
+              <ul
+                class="
+                  mt-4
+                  flex flex-col
+                  items-start
+                  gap-2
+                  text-left
+                  px-16
+                  py-8
+                "
+              >
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>Access to all basic features</span>
+                </li>
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>Basic reporting and analytics</span>
+                </li>
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>Up to 10 individual users</span>
+                </li>
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>20GB individual data each user</span>
+                </li>
+                <li class="flex items-start justify-start gap-2">
+                  <span
+                    class="
+                      inline-block
+                      relative
+                      before:absolute
+                      before:top-1/2
+                      before:left-1/2
+                      before:-translate-x-1/2
+                      before:-translate-y-1/2
+                      before:-z-10
+                      before:aspect-square
+                      before:block
+                      before:w-[calc(100%+0.3rem)]
+                      before:bg-violet-200
+                      before:rounded-full
+                    "
+                  >
+                    <i class="fas fa-check text-gray-900"></i>
+                  </span>
+                  <span>Basic chat and email support</span>
+                </li>
+              </ul>
+              <div class="p-8 bg-slate-100">
+                <button
+                  class="
+                    bg-violet-600
+                    text-white
+                    px-4
+                    py-3
+                    rounded-lg
+                    font-medium
+                    w-full
+                    capitalize
+                    hover:scale-105
+                    focus:outline-2
+                    focus:outline-offset-4
+                    focus:outline
+                    focus:outline-violet-500
+                    transition-all
+                  "
+                >
+                  get started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="py-8 px-4 md:px-12 md:py-12 lg:px-16 lg:py-16">
+        <div
+          class="
+            max-w-8xl
+            mx-auto
+            text-center
+            bg-slate-50
+            rounded-md
+            p-8
+            lg:p-16
+          "
+        >
+          <h2 class="text-3xl text-gray-900 font-medium mb-2">
+            Start your free trial
+          </h2>
+          <p class="text-base text-slate-500 mb-8">
+            Join over 4,000+ startups already growing with Untitled.
+          </p>
+          <div class="flex gap-4 items-center justify-center flex-wrap">
+            <button
+              class="
+                ring-2 ring-slate-300
+                px-4
+                py-3
+                rounded-lg
+                font-medium
+                capitalize
+                hover:scale-105
+                focus:outline-2
+                focus:outline-offset-4
+                focus:outline
+                focus:outline-violet-500
+                transition-all
+              "
+            >
+              learn more</button
+            ><button
+              class="
+                bg-violet-600
+                text-white
+                px-4
+                py-3
+                rounded-lg
+                font-medium
+                capitalize
+                hover:scale-105
+                focus:outline-2
+                focus:outline-offset-4
+                focus:outline
+                focus:outline-violet-500
+                transition-all
+              "
+            >
+              get started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="py-8 px-4 md:px-12 md:py-12 lg:px-16 lg:py-16">
+        <div class="max-w-4xl flex flex-col gap-2 items-center mx-auto">
+          <h2 class="text-3xl text-gray-900 font-medium mb-2 uppercase">faq</h2>
+          <details
+            class="
+              cursor-pointer
+              marker:text-gray-900
+              shadow-md shadow-violet-300/50
+              open:shadow-lg open:shadow-violet-300/70
+              group
+              rounded-md
+              w-full
+              overflow-hidden
+            "
+          >
+            <summary
+              class="
+                py-4
+                md:py-6
+                text-lg text-violet-600
+                font-medium
+                capitalize
+                text-center
+                group-open:font-bold
+              "
+            >
+              Lorem ipsum dolor sit amet?
+            </summary>
+            <div class="p-4 md:p-8 lg:p-16 text-slate-600">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                neque aut sunt sequi? Earum totam iure nihil error distinctio!
+                Amet nulla sint cum magni iusto velit omnis vel facere ipsam.
+              </p>
+            </div>
+          </details>
+          <details
+            class="
+              cursor-pointer
+              marker:text-gray-900
+              shadow-md shadow-violet-300/50
+              open:shadow-lg open:shadow-violet-300/70
+              group
+              rounded-md
+              w-full
+              overflow-hidden
+            "
+          >
+            <summary
+              class="
+                py-4
+                md:py-6
+                text-lg text-violet-600
+                font-medium
+                capitalize
+                text-center
+                group-open:font-bold
+              "
+            >
+              Lorem ipsum dolor sit amet?
+            </summary>
+            <div class="p-4 md:p-8 lg:p-16 text-slate-600">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                neque aut sunt sequi? Earum totam iure nihil error distinctio!
+                Amet nulla sint cum magni iusto velit omnis vel facere ipsam.
+              </p>
+            </div>
+          </details>
+          <details
+            class="
+              cursor-pointer
+              marker:text-gray-900
+              shadow-md shadow-violet-300/50
+              open:shadow-lg open:shadow-violet-300/70
+              group
+              rounded-md
+              w-full
+              overflow-hidden
+            "
+          >
+            <summary
+              class="
+                py-4
+                md:py-6
+                text-lg text-violet-600
+                font-medium
+                capitalize
+                text-center
+                group-open:font-bold
+              "
+            >
+              Lorem ipsum dolor sit amet?
+            </summary>
+            <div class="p-4 md:p-8 lg:p-16 text-slate-600">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                neque aut sunt sequi? Earum totam iure nihil error distinctio!
+                Amet nulla sint cum magni iusto velit omnis vel facere ipsam.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="py-8 px-4 md:px-12 md:py-12 lg:px-16 lg:py-16">
+        <div class="text-center bg-slate-50 rounded-md p-8 max-w-8xl mx-auto">
+          <div class="flex justify-center items-center">
+            <div
+              class="
+                bg-green-100
+                rounded-full
+                h-24
+                aspect-square
+                overflow-hidden
+                border-4 border-white
+                mr-[-2rem]
+              "
+            >
+              <img src="./avatar1.png" alt="avatar" class="max-w-full" />
+            </div>
+            <div
+              class="
+                bg-violet-100
+                rounded-full
+                h-24
+                aspect-square
+                overflow-hidden
+                border-4 border-white
+                z-10
+                mb-8
+              "
+            >
+              <img src="./avatar2.png" alt="avatar" class="max-w-full" />
+            </div>
+            <div
+              class="
+                bg-amber-100
+                rounded-full
+                h-24
+                aspect-square
+                overflow-hidden
+                border-4 border-white
+                ml-[-2rem]
+              "
+            >
+              <img src="./avatar3.png" alt="avatar" class="max-w-full" />
+            </div>
+          </div>
+          <h2 class="text-3xl text-gray-900 font-medium mb-2">
+            Still have questions?
+          </h2>
+          <p class="text-base text-slate-500 mb-8">
+            Can’t find the answer you’re looking for? Please chat to our
+            friendly team.
+          </p>
+
+          <button
+            class="
+              bg-violet-600
+              text-white
+              px-4
+              py-3
+              rounded-lg
+              font-medium
+              capitalize
+              hover:scale-105
+              focus:outline-2
+              focus:outline-offset-4
+              focus:outline
+              focus:outline-violet-500
+              transition-all
+            "
+          >
+            get in touch
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="py-8 px-4 md:px-12 md:py-12 lg:px-16 lg:py-16">
+        <div class="max-w-8xl mx-auto">
+          <ul
+            class="
+              grid grid-cols-1
+              place-content-center place-items-center
+              gap-4
+              sm:grid-cols-2
+              md:grid-cols-4
+            "
+          >
+            <li class="flex flex-col items-center gap-4">
+              <h4 class="text-slate-400 capitalize">links group</h4>
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="flex flex-col items-center gap-4">
+              <h4 class="text-slate-400 capitalize">links group</h4>
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="flex flex-col items-center gap-4">
+              <h4 class="text-slate-400 capitalize">links group</h4>
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="flex flex-col items-center gap-4">
+              <h4 class="text-slate-400 capitalize">links group</h4>
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="
+                      text-lg text-gray-900
+                      hover:text-violet-500
+                      focus:text-violet-600 focus:outline-none
+                    "
+                    >link text</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <hr class="text-slate-200 border border-slate-200 my-8" />
+          <div
+            class="flex flex-wrap items-center justify-between gap-y-2 gap-x-4"
+          >
+            <img src="logo.svg" alt="brand-logo" /><span class="text-slate-400"
+              >© 2021 All rights reserved.</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
