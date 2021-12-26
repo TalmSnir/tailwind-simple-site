@@ -120,94 +120,100 @@
             wrap
             flex-col
             items-center
-            justify-between
+            justify-center
             lg:gap-24
             gap-16
             max-w-8xl
             mx-auto
-            md:flex-row
+            lg:flex-row
           "
         >
-          <div class="section_text">
-            <div class="text-center md:text-left max-w-xl">
-              <h1 class="text-4xl text-gray-900 font-bold mb-4">
-                Be the first to know when we launch
-              </h1>
-              <p class="section_subtitle mb-4">
-                We’re still building. Subscribe for updates and 20% off when we
-                launch. No spam, we promise!
-              </p>
-            </div>
-            <form class="accent-violet-600">
-              <div
-                class="
-                  flex flex-col
-                  gap-2
-                  sm:flex-row
-                  align-center
-                  justify-center
-                  mb-2
-                "
-              >
-                <input
-                  type="text"
-                  placeholder="enter your email"
-                  class="
-                    appearance-none
-                    rounded-lg
-                    border-2 border-slate-300
-                    px-4
-                    py-3
-                    grow
-                    hover:ring-4 hover:ring-violet-300
-                    focus:outline-violet-400
-                    focus:outline
-                    focus:outline-2
-                    focus:ring-4
-                    focus:ring-violet-300
-                    transition-all
-                  "
-                />
-                <button
-                  class="
-                    bg-violet-600
-                    text-white
-                    px-4
-                    py-3
-                    rounded-lg
-                    font-medium
-                    capitalize
-                    hover:scale-105
-                    focus:outline-2
-                    focus:outline-offset-4
-                    focus:outline
-                    focus:outline-violet-500
-                    transition-all
-                  "
-                  type="submit"
-                >
-                  subscribe
-                </button>
+          <div class="grow w-full flex items-center justify-center">
+            <div
+              class="flex flex-col justify-center items-center lg:items-start"
+            >
+              <div class="text-center lg:text-left">
+                <h1 class="text-4xl text-gray-900 font-bold mb-4">
+                  Be the first to know when we launch
+                </h1>
+                <p class="mb-4 max-w-xl">
+                  We’re still building. Subscribe for updates and 20% off when
+                  we launch. No spam, we promise!
+                </p>
               </div>
-              <label class="flex items-center">
-                <input
-                  type="checkbox"
-                  name="privacy-checkbox"
-                  id="privacy-checkbox"
-                  class="mr-2"
-                />
-                we care about your privacy. check to allow data collection
-              </label>
-            </form>
+              <form class="accent-violet-600 max-w-[60ch]">
+                <div
+                  class="
+                    flex flex-col
+                    gap-2
+                    sm:flex-row
+                    align-center
+                    justify-center
+                    mb-2
+                  "
+                >
+                  <input
+                    type="text"
+                    placeholder="enter your email"
+                    class="
+                      appearance-none
+                      rounded-lg
+                      border-2 border-slate-300
+                      px-4
+                      py-3
+                      grow
+                      hover:ring-4 hover:ring-violet-300
+                      focus:outline-violet-400
+                      focus:outline
+                      focus:outline-2
+                      focus:ring-4
+                      focus:ring-violet-300
+                      transition-all
+                    "
+                  />
+                  <button
+                    class="
+                      bg-violet-600
+                      text-white
+                      px-4
+                      py-3
+                      rounded-lg
+                      font-medium
+                      capitalize
+                      hover:scale-105
+                      focus:outline-2
+                      focus:outline-offset-4
+                      focus:outline
+                      focus:outline-violet-500
+                      transition-all
+                    "
+                    type="submit"
+                  >
+                    subscribe
+                  </button>
+                </div>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    name="privacy-checkbox"
+                    id="privacy-checkbox"
+                    class="mr-2"
+                  />
+                  we care about your privacy. check to allow data collection
+                </label>
+              </form>
+            </div>
           </div>
           <div
             class="
+              grow
+              w-full
               flex
               relative
               items-center
               justify-center
               before:h-2/3 before:w-[80vw]
-              md:before:w-[50vw]
+              md:before:w-[min(100%,700px)]
               before:bg-slate-50
               before:absolute
               before:top-1/2
@@ -724,7 +730,9 @@
             >
           </div>
 
-          <div class="flex justify-center items-center gap-8 flex-wrap">
+          <div
+            class="flex justify-center items-center gap-8 lg:gap-16 flex-wrap"
+          >
             <div class="shadow-lg rounded-md pt-8">
               <div class="flex flex-col gap-2 items-center">
                 <span
@@ -1446,7 +1454,17 @@
     </section>
     <section>
       <div class="py-8 px-4 md:px-12 md:py-12 lg:px-16 lg:py-16">
-        <div class="text-center bg-slate-50 rounded-md p-8 max-w-8xl mx-auto">
+        <div
+          class="
+            text-center
+            bg-slate-50
+            rounded-md
+            p-8
+            lg:p-16
+            max-w-8xl
+            mx-auto
+          "
+        >
           <div class="flex justify-center items-center">
             <div
               class="
